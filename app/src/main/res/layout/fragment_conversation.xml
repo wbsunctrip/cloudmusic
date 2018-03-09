@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no_notwork"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFF8BD"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="网络连接失败，请检查网络设置"
+            android:textColor="#FF7D13"
+            android:textSize="15dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_conversation_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_tips"
+        android:overScrollMode="never"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="当前无会话"
+            android:textColor="#243930"
+            android:textSize="23dp"/>
+    </RelativeLayout>
+</RelativeLayout>

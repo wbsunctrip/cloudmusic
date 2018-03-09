@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CloudMusic</string>
+    <string name="content_mine">我的</string>
+    <string name="content_music">音乐馆</string>
+    <string name="content_english">英语角</string>
+    <string name="content_search">搜索</string>
+
+</resources>

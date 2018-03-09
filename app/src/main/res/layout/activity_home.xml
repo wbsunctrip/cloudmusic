@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/home_body"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical" >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/home_content"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/home_content_mine"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/content_mine"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/home_content_music"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/content_music"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/home_content_english"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/content_english"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_search"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/hm_search"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/content_search" />
+
+            <ImageView
+                android:id="@+id/hm_search_picture"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@id/hm_search"
+                android:background="@drawable/cloud_music_search" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text="picture"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/conversation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_conversation"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="歌曲名"
+                android:textColor="#888888"/>
+
+            <ImageView
+                android:id="@+id/iv_conversation"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/tv_conversation"
+                android:layout_centerHorizontal="true"
+                android:background="#999999"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="空白"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/tv_phone"
+                android:layout_centerHorizontal="true"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contacts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="开始暂停"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_contacts"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/tv_contacts"
+                android:layout_centerHorizontal="true"></ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="列表"></TextView>
+
+            <ImageView
+                android:id="@+id/iv_me"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/tv_me"
+                android:layout_centerHorizontal="true"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        style="@style/line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/footer"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_divider"/>
+</RelativeLayout>
